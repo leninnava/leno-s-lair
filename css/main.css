@@ -285,7 +285,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Helvetica", "Arial", sans-serif; }
+  font-family: "Barlow", sans-serif; }
 
 code,
 pre {
@@ -6664,13 +6664,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-weight: 700 !important; }
 
 .is-family-primary {
-  font-family: "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Barlow", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Barlow", sans-serif !important; }
 
 .is-family-sans-serif {
-  font-family: "Helvetica", "Arial", sans-serif !important; }
+  font-family: "Barlow", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -7481,7 +7481,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem; }
 
 html {
-  background: #e3f6f5; }
+  background: linear-gradient(to left top, #e3f6f5, #bae8e8); }
 
 .card {
   position: absolute;
