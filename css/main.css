@@ -2982,7 +2982,7 @@ a.tag:hover {
 .card-header {
   background-color: transparent;
   align-items: stretch;
-  box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
+  box-shadow: none;
   display: flex; }
 
 .card-header-title {
@@ -7481,4 +7481,4 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem; }
 
 #projects {
-  background: #e3f6f5; }
+  background: #2c698d; }
