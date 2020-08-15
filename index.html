@@ -1,182 +1,227 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My first Bulma website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/515daf4ad2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <section class="hero is-fullheight">
-    <div class="hero-body container">
-      <div class="columns">
-        <div class="column is-narrow"  id="information">
-          <figure class="image is-128x128 mb-5">
+  <div class="columns">
+    <section class="hero is-primary column has-text-centered is-bold is-fullheight" id="information">
+      <div class="hero-body">
+        <div class="container">
+          <figure class="container image is-128x128 mb-5">
             <img class="is-rounded" src="assets/photo_2020-06-14_21-29-47.jpg" alt="some handsome dude">
           </figure>
-          <h1 class="title is-1">Leno Nava <span class="tag is-primary ml-2">Front-End Dev</span> </h1>
-          <nav class="mb-5">
-            <span class="icon">
-              <a href="twitter.com/lofiln" class="fab fa-lg fa-twitter"></a>
-            </span>
-            <span class="icon mx-5">
-              <a class="fab fa-lg fa-github-alt"></a>
-            </span>
-            <span class="icon">
-              <a class="fab fa-lg fa-telegram-plane"></a>
-            </span>
-          </nav>
-          <div class="content"> 
-            <p class="has-text-weight-light has-text-left is-1 mb-5" style="width: 25rem;">Self taught web developer from Venezuela. He makes pretty stuff with React, CSS libraries and likes old school RPGs, indie music and Twin Peaks ☕🦉
+          <h1 class="title is-size-1-mobile">Leno Nava
+          <h2 class="subtitle is-size-3">Front-end Developer</h2>
+
+          <div class="content mb-6 pl-5">
+            <p class="has-text-weight-normal is-size-6-mobile has-text-left">I make pretty stuff with <span class="has-text-weight-medium"> React</span> and <span class="has-text-weight-medium">CSS libraries</span>. I love old
+              school RPGs, indie music and Twin Peaks too ☕🦉.
             </p>
           </div>
-         
-          <hr>
-          <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
-            <ul>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#">Blog posts<span class="tag is-info ml-2">Soon!</span></a></li>
-              <li><a href="#">Other stuff<span class="tag is-info ml-2">Also soon!</span></a></li>
-            </ul>
+          <nav class="level is-mobile">
+            <span class="icon level-item">
+              <a href="twitter.com/lofiln" class="fab fa-2x fa-twitter" style="color: #fff"></a>
+            </span>
+            <span class="icon level-item">
+              <a class="fab fa-2x fa-github" style="color: #fff"></a>
+            </span>
+            <span class="icon level-item">
+              <a class="fab fa-2x fa-telegram" style="color: #fff"></a>
+            </span>
           </nav>
         </div>
       </div>
-    </div>
-  </section>
-  <div class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Stuff I've done
-        </h1>
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li class="">
+                <a class="has-text-weight-bold" href="#projects">Projects</a></li>
+              </li>
+              <li>
+                <a class="has-text-weight-bold" href="#">Blog posts
+                  <span class="tag is-info ml-2">Soon!</span></a>
+              </li>
+              
+              
+              <li>
+                <a class="has-text-weight-bold" href="#">Other stuff
+                  <span class="tag is-info ml-2">Also soon!</span></a>
+              </li>
+        
+            </ul>
+          </div>
+        </nav>
+       <!--  <div class="tab is-centered has-bullet-separator">
+          <ul>
+            <li> 
+            <li> </li>
+            <li> </li>
+          </ul>
+        </div> -->
       </div>
-    </div>
+    </section>
+    <section class="column" id="projects">
+      <div class="hero is-info">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Stuff I've done
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <figure class="card-image">
+                  <img class="image" src="assets/project-images/cow-image.jpg" alt="Some cows">
+                </figure>
+                <div class="card-header">
+                  <div class="card-header-title is-centered is-primary">Cow Products</div>
+                </div>
+                <div class="card-content">A simple landing page made with plain CSS.</div>
+                <div class="card-footer">
+                  <a class="card-footer-item" href="https://github.com/leninnava/Cow-Products_landing-page">
+                    <button class="button is-primary">Github
+                      repo</button>
+                  </a>
+                  <a class="card-footer-item" href="https://leninnava.github.io/Cow-Products_landing-page/">
+                    <button class="button is-primary">Live page</button>
+                  </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-header-title is-centered">Test Card</div>
+                  <div class=></div>
+                </div>
+                <figure class="card-image">
+                  <img class="image" src="assets/Avatar 1.png" alt="">
+                </figure>
+                <div class="card-content">Card content, test asñlfkjasñldf</div>
+                <div class="card-footer">
+                  <div class="card-footer-item">
+                    <div class="dropdown is-hoverable">
+                      <div class="dropdown-trigger">
+                        <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu">
+                          <span>Dropdown Button</span>
+                        </button>
+                      </div>
+                      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                          <div class="dropdown-item">Item</div>
+                          <div class="dropdown-item">Item</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <figure class="card-image">
+                  <img class="image" src="assets/Avatar 1.png" alt="">
+                </figure>
+                <div class="card-header">
+                  <div class="card-header-title is-centered">Test Card</div>
+                </div>
+                <div class="card-content">Card content, test asñlfkjasñldf</div>
+                <div class="card-footer">
+                  <div class="card-footer-item">Github repo</div>
+                  <div class="card-footer-item">Live page</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-header-title is-centered">Test Card</div>
+                  <div class=></div>
+                </div>
+                <figure class="card-image">
+                  <img class="image" src="assets/Avatar 1.png" alt="">
+                </figure>
+                <div class="card-content">Card content, test asñlfkjasñldf</div>
+                <div class="card-footer">
+                  <div class="card-footer-item">Github repo</div>
+                  <div class="card-footer-item">Live page</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-header-title is-centered">Test Card</div>
+                  <div class=></div>
+                </div>
+                <figure class="card-image">
+                  <img class="image" src="assets/Avatar 1.png" alt="">
+                </figure>
+                <div class="card-content">Card content, test asñlfkjasñldf</div>
+                <div class="card-footer">
+                  <div class="card-footer-item">Github repo</div>
+                  <div class="card-footer-item">Live page</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-header-title is-centered">Test Card</div>
+                  <div class=></div>
+                </div>
+                <figure class="card-image">
+                  <img class="image" src="assets/Avatar 1.png" alt="">
+                </figure>
+                <div class="card-content">Card content, test asñlfkjasñldf</div>
+                <div class="card-footer">
+                  <div class="card-footer-item">Github repo</div>
+                  <div class="card-footer-item">Live page</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer is-info">
+      <div class="content has-text-centered">
+        Made with Bulma :D
+      </div>
+    </footer>
   </div>
-  <section class="section columns" id="projects">
-    <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header-title is-centered">Cow Products</div>
-                <div class=></div>
-              </div>
-              <figure class="card-image">
-                <img src="assets/Anotación 2020-08-09 183341.jpg" alt="Some cows">
-              </figure>
-              <div class="card-content">A simple landing page made with plain CSS.</div>
-              <div class="card-footer">
-                <a class="card-footer-item" href="https://github.com/leninnava/Cow-Products_landing-page">Github
-                  repo</a>
-                <a class="card-footer-item" href="https://leninnava.github.io/Cow-Products_landing-page/">Live page</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header-title is-centered">Test Card</div>
-                <div class=></div>
-              </div>
-              <figure class="card-image">
-                <img src="assets/Avatar 1.png" alt="">
-              </figure>
-              <div class="card-content">Card content, test asñlfkjasñldf</div>
-              <div class="card-footer">
-                <div class="card-footer-item">Github repo</div>
-                <div class="card-footer-item">Live page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header-title is-centered">Test Card</div>
-                <div class=></div>
-              </div>
-              <figure class="card-image">
-                <img src="assets/Avatar 1.png" alt="">
-              </figure>
-              <div class="card-content">Card content, test asñlfkjasñldf</div>
-              <div class="card-footer">
-                <div class="card-footer-item">Github repo</div>
-                <div class="card-footer-item">Live page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header-title is-centered">Test Card</div>
-                <div class=></div>
-              </div>
-              <figure class="card-image">
-                <img src="assets/Avatar 1.png" alt="">
-              </figure>
-              <div class="card-content">Card content, test asñlfkjasñldf</div>
-              <div class="card-footer">
-                <div class="card-footer-item">Github repo</div>
-                <div class="card-footer-item">Live page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header-title is-centered">Test Card</div>
-                <div class=></div>
-              </div>
-              <figure class="card-image">
-                <img src="assets/Avatar 1.png" alt="">
-              </figure>
-              <div class="card-content">Card content, test asñlfkjasñldf</div>
-              <div class="card-footer">
-                <div class="card-footer-item">Github repo</div>
-                <div class="card-footer-item">Live page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <div class="tile is-child">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-header-title is-centered">Test Card</div>
-                <div class=></div>
-              </div>
-              <figure class="card-image">
-                <img src="assets/Avatar 1.png" alt="">
-              </figure>
-              <div class="card-content">Card content, test asñlfkjasñldf</div>
-              <div class="card-footer">
-                <div class="card-footer-item">Github repo</div>
-                <div class="card-footer-item">Live page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      Made with Bulma :D
-    </div>
-  </footer>
   <script type="text/javascript" src="lib/main.js"></script>
 </body>
+
 </html>
