@@ -7505,5 +7505,6 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .card {
   border-radius: 6px; }
   .card .card-image .image {
+    max-height: 50%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px; }
