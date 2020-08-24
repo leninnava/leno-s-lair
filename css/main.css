@@ -2035,9 +2035,9 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-family: "Arimo", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.125; }
   .title strong {
     color: inherit;
@@ -2063,7 +2063,7 @@ a.tag:hover {
 
 .subtitle {
   color: #4a4a4a;
-  font-family: "Arimo", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25; }
@@ -2975,7 +2975,7 @@ a.tag:hover {
     content: "\0227B"; }
 
 .card {
-  background-color: #227c91;
+  background-color: #175361;
   box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.07);
   color: #fff;
   max-width: 100%;
@@ -6669,10 +6669,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: "Roboto", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Arimo", sans-serif !important; }
+  font-family: "Bebas Neue", cursive !important; }
 
 .is-family-sans-serif {
-  font-family: "Roboto", "Arimo", sans-serif !important; }
+  font-family: "Roboto", sans-serif !important; }
 
 .is-family-monospace {
   font-family: monospace !important; }
@@ -7480,13 +7480,26 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 3rem 1.5rem 6rem;
+  color: #fff; }
 
 #information {
-  background-image: url("/assets/project-images/cow-image.jpg"); }
+  background-image: url("assets/project-images/catherine-heath-6DWK3rX0J5k-unsplash.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-position: center; }
+
+#projects {
+  background-color: #227c91; }
+
+#footer {
+  background-color: #0b2930; }
 
 .tag {
   font-family: "Roboto", sans-serif; }
+
+.tag, .button, #avatar {
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.07); }
 
 .card {
   border-radius: 6px; }
