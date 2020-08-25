@@ -7490,6 +7490,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-position: center;
   background-attachment: fixed; }
 
+@media screen and (min-width: 769px), print {
+  #information-column {
+    border-left: solid;
+    padding-left: 50px; } }
+
+@media screen and (min-width: 1024px), print {
+  #information-column #social-links {
+    margin-left: -0.7rem; } }
+
 #projects {
   background-color: #227c91; }
 
@@ -7505,6 +7514,5 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .card {
   border-radius: 6px; }
   .card .card-image .image {
-    max-height: 50%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px; }
