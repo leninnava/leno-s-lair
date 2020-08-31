@@ -7484,11 +7484,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #fff; }
 
 #information {
-  background: url("../assets/project-images/catherine-heath-6DWK3rX0J5k-unsplash.webp"), linear-gradient(to top right, #227c91, #0b2930);
+  background: url("../assets/project-images/catherine-heath-6DWK3rX0J5k-unsplash.webp"), linear-gradient(to top right, #4cbbd5, #175361);
   background-size: cover;
   background-blend-mode: soft-light;
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: center; }
 
 @media screen and (min-width: 769px), print {
   #information-column {
@@ -7524,15 +7523,24 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.07);
   border-radius: 6px;
   background-color: #175361;
-  display: flex;
-  height: 50vh;
-  flex-direction: row; }
-  .project-item .project-image {
-    background-color: white;
-    flex: 1;
-    overflow: hidden; }
+  min-height: fit-content;
+  color: #fff; }
   .project-item .project-content {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: left; }
+    flex-direction: column; }
+    @media screen and (min-width: 1024px), print {
+      .project-item .project-content {
+        flex-direction: row; } }
+    .project-item .project-content .project-image {
+      background-color: white;
+      flex-basis: 40%;
+      overflow: hidden;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px; }
+    .project-item .project-content .project-information {
+      padding: 2rem 3rem 2rem 3rem;
+      text-align: start;
+      flex-basis: 60%; }
+      .project-item .project-content .project-information .title {
+        color: #fff;
+        font-weight: 500; }
