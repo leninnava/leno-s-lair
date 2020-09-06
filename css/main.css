@@ -2035,7 +2035,7 @@ a.tag:hover {
 
 .title {
   color: #363636;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.125; }
@@ -2063,7 +2063,7 @@ a.tag:hover {
 
 .subtitle {
   color: #4a4a4a;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25; }
@@ -6669,7 +6669,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   font-family: "Roboto", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Bebas Neue", cursive !important; }
+  font-family: "Bebas Neue", sans-serif !important; }
 
 .is-family-sans-serif {
   font-family: "Roboto", sans-serif !important; }
@@ -7480,11 +7480,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem;
+  padding: 2rem 3rem;
   color: #fff; }
 
 #information {
-  background: url("../assets/project-images/catherine-heath-6DWK3rX0J5k-unsplash.webp"), linear-gradient(to top right, #4cbbd5, #175361);
+  background: url("../assets/project-images/catherine-heath-6DWK3rX0J5k-unsplash.webp"), linear-gradient(to bottom left, #4cbbd5, #175361);
   background-size: cover;
   background-blend-mode: soft-light;
   background-position: center; }
@@ -7527,16 +7527,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #fff; }
   .project-item .project-content {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    max-height: inherit; }
     @media screen and (min-width: 1024px), print {
       .project-item .project-content {
         flex-direction: row; } }
     .project-item .project-content .project-image {
+      display: flex;
       background-color: white;
       flex-basis: 40%;
       overflow: hidden;
       border-top-left-radius: 6px;
       border-bottom-left-radius: 6px; }
+      .project-item .project-content .project-image img {
+        object-fit: cover; }
     .project-item .project-content .project-information {
       padding: 2rem 3rem 2rem 3rem;
       text-align: start;
