@@ -7486,7 +7486,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 #information {
   fill: #fff;
   background-repeat: repeat;
-  background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st1{fill:rgba(255,255,255,1)} %3C/style%3E%3Cpath style='fill:none;stroke:rgba(255,255,255,1);stroke-width:50;stroke-miterlimit:10' d='M-44-184l83 92 83-92 83 92 83-92 83 92 83-92 83 92 83-92'/%3E%3Cpath class='st1' d='M.8 500L-101 387.4l37.2-33.5L.8 425.4l83.1-92 83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.5 37.2 33.5L499.8 500l-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92zM.8 333.3L-101 220.7l37.2-33.4L.8 258.7l83.1-92 83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.4 37.2 33.4-101.8 112.6-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92zM.8 166.6L-101 54.1l37.2-33.5L.8 92 83.9 0l83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.4 37.2 33.5-101.8 112.5-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92z'/%3E%3C/svg%3E"), linear-gradient(to left bottom, #175361, #175361);
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st1{fill:rgba(255,255,255,1)} %3C/style%3E%3Cpath style='fill:none;stroke:rgba(255,255,255,1);stroke-width:50;stroke-miterlimit:10' d='M-44-184l83 92 83-92 83 92 83-92 83 92 83-92 83 92 83-92'/%3E%3Cpath class='st1' d='M.8 500L-101 387.4l37.2-33.5L.8 425.4l83.1-92 83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.5 37.2 33.5L499.8 500l-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92zM.8 333.3L-101 220.7l37.2-33.4L.8 258.7l83.1-92 83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.4 37.2 33.4-101.8 112.6-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92zM.8 166.6L-101 54.1l37.2-33.5L.8 92 83.9 0l83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.4 37.2 33.5-101.8 112.5-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92z'/%3E%3C/svg%3E"), linear-gradient(to right bottom, #175361, #175361);
   background-attachment: fixed;
   background-blend-mode: soft-light;
   background-size: 150% auto;
@@ -7507,7 +7507,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     right: -5.5rem;
     transition: all 0.2s ease-in;
     background-size: contain;
-    box-sizing: content-box; }
+    box-sizing: content-box;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.07); }
   #information-column:hover::after {
     background: linear-gradient(to top, white 0%, white 33%, #4cbbd5 33%, #4cbbd5 66%, #227c91 66%, #227c91 100%); }
 
@@ -7521,7 +7522,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding: .5rem 2rem;
     transition: all 0.2s ease-in; }
     .links ul li a:hover {
-      transform: translateX(1rem); }
+      transform: translateX(1rem);
+      box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.07); }
     .links ul li a.link-1 {
       background: linear-gradient(70deg, transparent 0%, transparent 50%, #227c91 50%);
       background-size: 250%; }
