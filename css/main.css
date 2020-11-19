@@ -7492,7 +7492,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-size: 150% auto;
   background-position: top left;
   animation: background-movement 300s ease-out;
-  animation-iteration-count: 5; }
+  animation-iteration-count: infinite; }
   #information-column {
     position: relative;
     padding: 0;
