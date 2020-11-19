@@ -7522,7 +7522,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     padding: .5rem 2rem;
     transition: all 0.2s ease-in; }
     .links ul li a:hover {
-      transform: translateX(1rem);
+      transform: translateX(0.5rem);
       box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.07); }
     .links ul li a.link-1 {
       background: linear-gradient(70deg, transparent 0%, transparent 50%, #227c91 50%);
