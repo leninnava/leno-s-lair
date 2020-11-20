@@ -7492,8 +7492,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-size: 150% auto;
   background-position: top left;
   animation: background-movement 260s ease;
-  animation-iteration-count: infinite;
-  animation-delay: 1.5s; }
+  animation-iteration-count: infinite; }
   #information-column {
     position: relative;
     padding: 0;
@@ -7532,7 +7531,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: linear-gradient(-170deg, transparent 0%, transparent 50%, white 50%);
   background-size: 200% 315%;
   background-position: 100% 0%;
-  animation: links-reveal 1s 1s;
+  animation: links-reveal 1s 1.5s;
   animation-fill-mode: backwards; }
   .links ul li {
     transition: all 0.2s ease-in; }
