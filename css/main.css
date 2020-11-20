@@ -7485,7 +7485,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media screen and (min-width: 1024px), print {
   body {
-    margin: 1.5rem 1rem; } }
+    margin: 0rem 1.5rem; } }
 
 #information {
   fill: #fff;
