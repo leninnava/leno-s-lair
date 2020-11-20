@@ -7483,6 +7483,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 2rem 3rem;
   color: #fff; }
 
+@media screen and (min-width: 1024px), print {
+  body {
+    margin: 1.5rem 1rem; } }
+
 #information {
   fill: #fff;
   background-repeat: repeat;
