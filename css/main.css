@@ -7532,7 +7532,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: linear-gradient(-170deg, transparent 0%, transparent 50%, white 50%);
   background-size: 200% 315%;
   background-position: 100% 0%;
-  animation: links-reveal .5s 1s;
+  animation: links-reveal 1s 1s;
   animation-fill-mode: backwards; }
   .links ul li {
     transition: all 0.2s ease-in; }
@@ -7617,6 +7617,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @keyframes links-reveal {
   0% {
     box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155);
+    background-position: 0% 80%; }
+  50% {
+    box-shadow: none;
     background-position: 0% 80%; }
   100% {
     box-shadow: none;
