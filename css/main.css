@@ -7492,72 +7492,87 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-size: 150% auto;
   background-position: top left;
   animation: background-movement 260s ease;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  z-index: 1; }
+  #information-column, #information .section-links {
+    border-radius: .25rem; }
+  #information-column::after, #information .icon, #information .section-links ul li a {
+    border-radius: 2px; }
   #information-column {
     position: relative;
     padding: 0;
     background: linear-gradient(70deg, transparent 0%, transparent 50%, white 50%);
     background-size: 250%;
     background-position: 0%;
-    animation: information-reveal 1s;
+    animation: information-reveal .6s;
     animation-delay: .5s;
-    animation-fill-mode: backwards; }
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in; }
     #information-column h2 {
       color: rgba(255, 255, 255, 0.795); }
   #information-column::after {
     position: absolute;
     content: "";
-    width: 10%;
+    width: 3rem;
     background: linear-gradient(to top, white 0%, white 33%, #4cbbd5 33%, #4cbbd5 66%, #227c91 66%, #227c91 100%);
-    height: calc(100% - 1.65rem);
-    top: calc(.85rem);
-    right: -5.5rem;
+    height: 100%;
+    top: 0;
+    right: -6rem;
     background-size: contain;
     box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155);
-    animation: color-bar-reveal 1s;
-    animation-delay: 1s;
+    animation: color-bar-reveal .6s;
+    animation-delay: 1.3s;
     animation-fill-mode: backwards;
-    backface-visibility: none; }
+    backface-visibility: none;
+    animation-timing-function: ease; }
   #information-column:hover::after {
     background: linear-gradient(to top, white 0%, white 33%, #4cbbd5 33%, #4cbbd5 66%, #227c91 66%, #227c91 100%); }
 
-#social-links {
-  font-size: 1.2rem; }
-  #social-links:last-child {
-    margin-right: -.6rem; }
+.social-links {
+  z-index: 0;
+  animation: fade-in .6s ease-out 1.5s backwards;
+  font-size: 1.2rem;
+  margin-right: -.4rem; }
+  .social-links .icon {
+    background: transparent; }
+    .social-links .icon a {
+      color: white; }
+  .social-links :not(:last-child) {
+    margin-right: 1rem; }
 
-.links {
+.section-links {
   display: inline-block;
-  background: linear-gradient(-170deg, transparent 0%, transparent 50%, white 50%);
+  background: linear-gradient(-190deg, transparent 0%, transparent 50%, white 50%);
   background-size: 200% 315%;
   background-position: 100% 0%;
-  animation: links-reveal 1s 1.5s;
+  animation: links-reveal .8s .8s;
+  animation-timing-function: ease-in;
   animation-fill-mode: backwards; }
-  .links ul li {
+  .section-links ul li {
     transition: all 0.2s ease-in; }
-    .links ul li a {
+    .section-links ul li a {
       display: inline-block;
       padding: .5rem 2rem;
       transition: all 0.2s ease-in; }
-      .links ul li a:hover {
-        transform: translateX(0.3rem);
+      .section-links ul li a:hover {
+        transform: translateX(0.2rem);
         box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155); }
-      .links ul li a.link-1 {
+      .section-links ul li a.link-1 {
         background: linear-gradient(70deg, transparent 0%, transparent 50%, #227c91 50%);
         background-size: 250%; }
-        .links ul li a.link-1:hover {
+        .section-links ul li a.link-1:hover {
           background-position: 100%;
           color: white; }
-      .links ul li a.link-2 {
+      .section-links ul li a.link-2 {
         background: linear-gradient(70deg, transparent 0%, transparent 50%, #4cbbd5 50%);
         background-size: 250%; }
-        .links ul li a.link-2:hover {
+        .section-links ul li a.link-2:hover {
           background-position: 100%;
           color: white; }
-      .links ul li a.link-3 {
+      .section-links ul li a.link-3 {
         background: linear-gradient(70deg, transparent 0%, transparent 50%, white 50%);
         background-size: 250%; }
-        .links ul li a.link-3:hover {
+        .section-links ul li a.link-3:hover {
           background-position: 100%; }
 
 .is-size-hero {
@@ -7575,6 +7590,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .tag, .button, #avatar {
   box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155); }
 
+.name {
+  line-height: 5rem; }
+
 .is-size-huge {
   font-size: 5.5rem; }
 
@@ -7590,35 +7608,35 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 @keyframes information-reveal {
   0% {
     background-position: 100%;
-    box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155); }
+    box-shadow: 0.4rem 0.4rem 0rem 0.05rem rgba(0, 0, 0, 0.155); }
   50% {
-    background-position: 100%;
-    box-shadow: none; }
+    background-position: 100%; }
   100% {
-    background-position: 0%; } }
+    background-position: 0%;
+    box-shadow: none; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @keyframes color-bar-reveal {
   0% {
-    width: 0%;
-    right: -2.4rem;
-    transform: scaleY(1.13); }
+    width: 0rem;
+    right: -3rem; }
   50% {
-    width: 10%;
-    right: -5.5rem;
-    transform: scaleY(1.13); }
-  70% {
-    transform: scaleY(1); }
-  90% {
+    width: -6rem;
     box-shadow: none; }
+  90% { }
   100% {
     box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155); } }
 
 @keyframes links-reveal {
   0% {
-    box-shadow: 0.18rem 0.18rem 0 0 rgba(0, 0, 0, 0.155);
+    box-shadow: 0.4rem 0.4rem 0rem 0.05rem rgba(0, 0, 0, 0.155);
     background-position: 0% 80%; }
   50% {
-    box-shadow: none;
     background-position: 0% 80%; }
   100% {
     box-shadow: none;
