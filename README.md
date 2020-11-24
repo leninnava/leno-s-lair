@@ -1,3 +1,1 @@
-Planned:
-
-React with Bulma re-implementation.
+Minimal portfolio page, made with React and Bulma.
