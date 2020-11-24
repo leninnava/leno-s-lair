@@ -35,6 +35,11 @@
   "deprecated": false,
   "description": "Start package for Bulma",
   "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "concurrently": "^5.3.0",
+    "imagemin-webp": "^6.0.0",
+    "parcel-bundler": "^1.12.4",
     "autoprefixer": "^9.7.6",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -59,17 +64,15 @@
     "url": "git+https://github.com/jgthms/bulma-start.git"
   },
   "scripts": {
-    "css-build": "node-sass _sass/main.scss css/main.css",
-    "css-deploy": "npm run css-build && npm run css-postcss",
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
-    "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --out-dir ./public"
   },
   "version": "0.0.4",
   "dependencies": {
-    "imagemin-webp": "^6.0.0"
+    "react": "^17.0.1",
+    "react-bulma-components": "^3.4.0",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0"
   }
 }
