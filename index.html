@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +7,11 @@
   <title>Leno's Lair</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="_sass/main.scss">
   <script src="https://kit.fontawesome.com/515daf4ad2.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <header>
-    <div class="hero is-primary has-text-centered-touch has-text-right is-fullheight" id="information">
+  <header class="hero is-primary has-text-centered-touch has-text-right is-fullheight" id="information">
       <div class="hero-body"> 
         <div class="container">
           <div class="columns is-centered is-vcentered">
@@ -22,22 +19,17 @@
               <h1 class="title name is-size-huge is-size-3-only-touch mb-5">I'm Lenin Nava</h1>
               <h2 class="subtitle is-size-3 is-size-3-tablet mb-3">And I'm a Front-end <br>
                 web Developer/designer.</h2>
-             <!-- <div class="content mb-1">
-                 <p class="has-text-weight-medium is-size-6">
-                    I make pretty stuff with <br> <span class="has-text-weight-bold">JavaScript</span> and <span class="has-text-weight-bold">CSS</span> (and lots of tea).
-                </p> 
-              </div> -->
               <div class="social-links">
                 
                 <span class="icon is-large">
-                  <a class="fab fa-lg fa-github-alt" style=""></a>
+                  <a class="fab fa-lg fa-github-alt"></a>
                 </span>
                 <span class="icon is-large">
 
-                  <a class="fab fa-lg fa-telegram" style=""></a>
+                  <a class="fab fa-lg fa-telegram"></a>
                 </span>
                 <span class="icon is-large">
-                  <a href="twitter.com/lofiln" class="fab fa-lg fa-twitter" style=""></a>
+                  <a href="#" class="fab fa-lg fa-twitter"></a>
                 </span>
               </div>
             </div>
@@ -80,8 +72,10 @@
           </div>
         </nav>
       </div>
-    </div>
   </header>
+
+  <main id="app"></main>
+
   <section class="section" id="projects">
     <div class="hero is-primary">
       <div class="hero-body">
@@ -258,9 +252,7 @@
       © 2020 by <span class="has-text-weight-medium">Lenin Nava</span>
     </p>
   </footer>
-
-  </div>
-  <script type="text/javascript" src="lib/main.js"></script>
+  <script type="text/javascript" src="_javascript/App.js"></script>
 </body>
 
 </html>
