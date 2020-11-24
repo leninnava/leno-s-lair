@@ -2,3 +2,4 @@ node_modules
 _javascript 
 _sass
 yarn-error.log
+.cache
