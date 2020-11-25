@@ -1,0 +1,122 @@
+// base 
+
+body {
+    @media screen and (min-width: 1024px), print{
+    }
+    position: relative;
+    fill:#fff;
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st1{fill:rgba(255,255,255,1)} %3C/style%3E%3Cpath style='fill:none;stroke:rgba(255,255,255,1);stroke-width:50;stroke-miterlimit:10' d='M-44-184l83 92 83-92 83 92 83-92 83 92 83-92 83 92 83-92'/%3E%3Cpath class='st1' d='M.8 500L-101 387.4l37.2-33.5L.8 425.4l83.1-92 83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.5 37.2 33.5L499.8 500l-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92zM.8 333.3L-101 220.7l37.2-33.4L.8 258.7l83.1-92 83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.4 37.2 33.4-101.8 112.6-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92zM.8 166.6L-101 54.1l37.2-33.5L.8 92 83.9 0l83.2 92 83.2-92 83.1 92 83.2-92 83.2 92 64.6-71.4 37.2 33.5-101.8 112.5-83.2-92-83.2 92-83.1-92-83.2 92-83.2-92z'/%3E%3C/svg%3E"),
+     linear-gradient(to right bottom, $color-primary-700 , $color-primary-700 );
+    background-attachment: fixed;
+    background-blend-mode: soft-light; 
+    background-repeat: repeat;
+    background-size: 400% auto;
+    background-position: left;
+    animation: background-movement 500s;
+    animation-iteration-count: infinite;
+}
+
+// Bulma basic overrrides 
+
+
+//HEADER
+
+
+
+#information {
+    // background: url("../assets/project-images/catherine-heath-6DWK3rX0J5k-unsplash.webp"), linear-gradient(to bottom left, $color-primary-300, $color-primary-700); 
+    // min-height: calc(100vh - 2rem);
+    background: transparent;
+    z-index: 1;
+    &-column, .section-links {
+        @include border-radius("large");
+    }
+    &-column::after, .icon, .section-links ul li a {
+        @include border-radius("small");
+    }
+   
+    &-column {
+        position: relative;
+        padding: 0;
+        background: linear-gradient(70deg, transparent 0%, transparent 50%, white 50%);
+        background-size: 250%;
+        background-position: 0%;
+        animation: information-reveal .6s;
+        animation-delay: .5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in;
+        h2 {
+            color: rgba(255, 255, 255, 0.795);
+        }
+    }
+
+    &-column::after {
+        position: absolute;
+        content: "";
+        width: 3rem;
+        background: linear-gradient(to top, 
+        $white 0%, $white 33%,
+         $color-primary-300 33%, $color-primary-300 66%,
+          $color-primary-500 66%, $color-primary-500 100% );
+        height: 100%;
+        top: 0;
+        right: -6rem;
+        background-size: contain;
+        box-shadow: $shadow;
+        animation: color-bar-reveal .6s;
+        animation-delay: 1.3s;
+        animation-fill-mode: backwards;
+        backface-visibility: none;
+        animation-timing-function: ease;
+    }
+    &-column:hover {
+        &::after {
+            background: linear-gradient(to top, 
+        $white 0%, $white 33%,
+         $color-primary-300 33%, $color-primary-300 66%,
+          $color-primary-500 66%, $color-primary-500 100% );
+        }
+    }
+    
+} 
+
+.social-links {
+    z-index: 1;
+    animation: fade-in .6s ease-out 1.5s backwards;
+    font-size: 1.2rem;
+    margin-right: -.4rem;
+    .icon {
+    background: transparent;
+        a {
+            color: $white;
+        }
+    }
+    :not(:last-child) {
+        margin-right: 1rem;
+    }
+    
+}
+
+
+
+// Header end. Consider extracting this to another file.
+
+.is-size-hero {
+    font-size: 5rem !important; 
+}
+
+#projects {
+    background-color: transparent;
+}
+
+#footer {
+    background-color: $color-primary-900;
+}
+ 
+.tag {
+    font-family: $family-primary;
+}
+
+.tag, .button, #avatar {
+    @include shadow("small");
+}

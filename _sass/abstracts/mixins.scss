@@ -1,0 +1,15 @@
+@mixin border-radius($type) {
+    @if ($type) == "large" {
+        border-radius: .25rem;
+    } @else if ($type) == "small" {
+        border-radius: 2px;
+    } 
+}
+
+@mixin shadow($size) {
+    @if ($size) == "large" {
+        box-shadow: $shadow-large;
+    } @else if ($size) == "small" {
+        box-shadow: $shadow-small;
+    }
+}

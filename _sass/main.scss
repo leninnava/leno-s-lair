@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins.scss";
+@import "./base/base";
+@import "./base/typography"; 
+@import "./base/animations.scss";
+@import "./components/nav.scss";
+
+
+
+
+//Backgrounds for each section
+
+
+
+.card {  
+    border-radius: $radius-large;
+    .card-image{
+        
+      .image{ 
+          border-top-left-radius: $radius-large;
+          border-top-right-radius: $radius-large;
+
+      }
+    }
+}
+
+ 
+.project-item { 
+    box-shadow: $shadow;
+    border-radius: $radius-large;
+    background-color: $color-primary-700;
+    min-height: fit-content;
+    color: #fff;
+    transition: all 0.1s ease-in;
+    &:hover {
+        box-shadow: $shadow-hover;
+    }
+ 
+    .project-content {
+        @media screen and (min-width: 1024px), print{
+            flex-direction: row;
+        }
+        display: flex;
+        flex-direction: column;
+        max-height: inherit; 
+        .project-image {
+            display: flex;
+            background-color: white;
+            flex-basis: 40%;
+            overflow: hidden;
+            border-top-left-radius: $radius-large;
+            border-top-right-radius: $radius-large; 
+            
+            @media screen and (min-width: 1024px), print{
+                border-top-left-radius: $radius-large;
+                border-bottom-left-radius: $radius-large;  
+                border-top-right-radius: 0;
+            }
+            img {
+                object-fit: cover;
+            }
+          }
+          .project-information {
+            padding: 2rem 3rem 2rem 3rem;
+            text-align: start;
+            flex-basis: 60%; 
+            margin: auto;
+
+            .title {
+                color: #fff;
+                font-weight: 500;
+            }
+        
+        }
+    }
+
+    
+    
+}
