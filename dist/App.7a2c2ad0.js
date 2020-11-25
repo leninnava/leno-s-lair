@@ -29772,8 +29772,13 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"_javascript/App.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"_javascript/components/Nav.js":[function(require,module,exports) {
 "use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Nav = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -29781,16 +29786,321 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("h1", {
-  className: "title"
-}, "Hello, this is working"), document.getElementById("app"));
+var Nav = function Nav(props) {
+  return /*#__PURE__*/_react.default.createElement("nav", {
+    className: props.location == "Home" ? "nav nav--home" : "Sections" ? "nav nav--section" : ""
+  }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "link-1",
+    href: "#projects"
+  }, "Projects,")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "link-2",
+    href: "#"
+  }, "Posts;")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+    className: "link-3",
+    href: "#"
+  }, "About me."))));
+};
+
+exports.Nav = Nav;
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"_javascript/components/Home/Home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Home = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Nav = require("../Nav");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Home = function Home() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", {
+    className: "hero is-primary has-text-centered-touch has-text-right is-fullheight",
+    id: "information"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "hero-body"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "columns is-centered is-vcentered"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "column is-4",
+    id: "information-column"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title name is-size-huge is-size-3-only-touch mb-5"
+  }, "I'm Lenin Nava"), /*#__PURE__*/_react.default.createElement("h2", {
+    className: "subtitle is-size-3 is-size-3-tablet mb-3"
+  }, "And I'm a Front-end ", /*#__PURE__*/_react.default.createElement("br", null), " web Developer/designer."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "social-links"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-large"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    className: "fab fa-lg fa-github-alt"
+  })), /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-large"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    className: "fab fa-lg fa-telegram"
+  })), /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon is-large"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "#",
+    className: "fab fa-lg fa-twitter"
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "column has-text-right is-hidden-touch has-text-weight-normal is-family-secondary"
+  }, /*#__PURE__*/_react.default.createElement(_Nav.Nav, {
+    location: "Home"
+  })))))));
+};
+
+exports.Home = Home;
+},{"react":"node_modules/react/index.js","../Nav":"_javascript/components/Nav.js"}],"_javascript/components/Projects/Projects.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Projects = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Nav = require("../Nav");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Projects = function Projects(props) {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "section",
+    id: "projects"
+  }, /*#__PURE__*/_react.default.createElement(_Nav.Nav, {
+    location: "Sections"
+  }), /*#__PURE__*/_react.default.createElement("h2", {
+    className: "title"
+  }, "Stuff I've done"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container has-text-centered"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-ancestor"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-parent is-6"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-child"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-item"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-content"
+  }, /*#__PURE__*/_react.default.createElement("figure", {
+    className: "project-image"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "assets/project-images/cow-image.webp",
+    alt: ""
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-information has-text-weight-light"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "title is-size-2"
+  }, "Cow Products"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "mb-5"
+  }, "A simple landing page, made with plain CSS and a lot of Flexbox."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "buttons"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "button has-text-weight-medium is-info is-normal"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fab fa-github-alt"
+  })), /*#__PURE__*/_react.default.createElement("span", null, "Github")), /*#__PURE__*/_react.default.createElement("button", {
+    className: "button has-text-weight-medium  is-link is-normal"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fa fa-rocket"
+  })), /*#__PURE__*/_react.default.createElement("span", null, "Live page"))))))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-parent is-6"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-child"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-item"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-content"
+  }, /*#__PURE__*/_react.default.createElement("figure", {
+    className: "project-image"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "assets/project-images/cow-image.webp",
+    alt: ""
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-information has-text-weight-light"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "title is-size-2"
+  }, "Cow Products"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "mb-5"
+  }, "A simple landing page, made with plain CSS and a lot of Flexbox."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "buttons"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "button has-text-weight-medium is-info is-normal"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fab fa-github-alt"
+  })), /*#__PURE__*/_react.default.createElement("span", null, "Github")), /*#__PURE__*/_react.default.createElement("button", {
+    className: "button has-text-weight-medium  is-link is-normal"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fa fa-rocket"
+  })), /*#__PURE__*/_react.default.createElement("span", null, "Live page")))))))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-ancestor"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-parent"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "tile is-child"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-item"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-content"
+  }, /*#__PURE__*/_react.default.createElement("figure", {
+    className: "project-image"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: "assets/project-images/cow-image.webp",
+    alt: ""
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "project-information has-text-weight-light"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "content"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "title is-size-2"
+  }, "Project"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "mb-5"
+  }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime placeat magni tempore debitis non odio mollitia consequatur, reiciendis nisi ipsam ab, saepe adipisci molestias consequuntur provident reprehenderit illo voluptate ex?"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "buttons"
+  }, /*#__PURE__*/_react.default.createElement("button", {
+    className: "button has-text-weight-medium is-info is-normal"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fab fa-github-alt"
+  })), /*#__PURE__*/_react.default.createElement("span", null, "Github")), /*#__PURE__*/_react.default.createElement("button", {
+    className: "button has-text-weight-medium  is-link is-normal"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fa fa-rocket"
+  })), /*#__PURE__*/_react.default.createElement("span", null, "Live page"))))))))))));
+};
+
+exports.Projects = Projects;
+},{"react":"node_modules/react/index.js","../Nav":"_javascript/components/Nav.js"}],"_javascript/components/Posts/Posts.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Posts = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Posts = function Posts(props) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    style: "height: 100vh"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "In construction."));
+};
+
+exports.Posts = Posts;
+},{"react":"node_modules/react/index.js"}],"_javascript/components/About/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.About = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var About = function About(props) {
+  return /*#__PURE__*/_react.default.createElement("footer", {
+    class: "footer has-text-centered",
+    id: "footer"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "columns"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    class: "column"
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    class: "mb-5"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    class: "mb-4"
+  }, "Oh no! The contact links are in the header instead of here.")), /*#__PURE__*/_react.default.createElement("button", _defineProperty({
+    class: "button has-text-weight-medium is-link mb-5",
+    href: "#information"
+  }, "class", "has-text-weight-medium"), /*#__PURE__*/_react.default.createElement("span", {
+    class: "icon"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    class: "fas fa-chevron-up"
+  })), " ", /*#__PURE__*/_react.default.createElement("span", null, " Go up there"))), /*#__PURE__*/_react.default.createElement("div", {
+    class: "column"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "There will be a email form here."))), /*#__PURE__*/_react.default.createElement("p", {
+    class: "is-size-7"
+  }, "\xA9 2020 by ", /*#__PURE__*/_react.default.createElement("span", {
+    class: "has-text-weight-medium"
+  }, "Lenin Nava")));
+};
+
+exports.About = About;
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"_javascript/components/Portfolio.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Portfolio = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Home = require("./Home/Home");
+
+var _Projects = require("./Projects/Projects");
+
+var _Posts = require("./Posts/Posts");
+
+var _About = require("./About/About");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Portfolio = function Portfolio(props) {
+  return /*#__PURE__*/_react.default.createElement(_Home.Home, null);
+};
+
+exports.Portfolio = Portfolio;
+},{"react":"node_modules/react/index.js","./Home/Home":"_javascript/components/Home/Home.js","./Projects/Projects":"_javascript/components/Projects/Projects.js","./Posts/Posts":"_javascript/components/Posts/Posts.js","./About/About":"_javascript/components/About/About.js"}],"_javascript/App.js":[function(require,module,exports) {
+"use strict";
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _Portfolio = require("./components/Portfolio");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_Portfolio.Portfolio, null), document.getElementById("app"));
 /* const setHeight = () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 }
 
 window.addEventListener("resize", setHeight); */
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./components/Portfolio":"_javascript/components/Portfolio.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29818,7 +30128,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59519" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61371" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
